@@ -301,6 +301,9 @@
   .h-424 {
     height: calc(var(--spacing) * 424);
   }
+  .h-674 {
+    height: calc(var(--spacing) * 674);
+  }
   .h-\[20px\] {
     height: 20px;
   }
@@ -351,6 +354,9 @@
   }
   .h-\[500px\] {
     height: 500px;
+  }
+  .h-\[674px\] {
+    height: 674px;
   }
   .h-\[985px\] {
     height: 985px;
@@ -563,6 +569,9 @@
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
   }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
@@ -705,9 +714,19 @@
       display: none;
     }
   }
+  .lg\:h-674 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 674);
+    }
+  }
   .lg\:h-\[617px\] {
     @media (width >= 64rem) {
       height: 617px;
+    }
+  }
+  .lg\:h-\[674px\] {
+    @media (width >= 64rem) {
+      height: 674px;
     }
   }
   .lg\:h-\[717px\] {
@@ -790,9 +809,29 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
+    }
+  }
   .lg\:items-start {
     @media (width >= 64rem) {
       align-items: flex-start;
+    }
+  }
+  .lg\:px-5 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 5);
+    }
+  }
+  .lg\:py-0 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:py-5 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 5);
     }
   }
   .lg\:text-start {
